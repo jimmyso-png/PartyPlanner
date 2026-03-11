@@ -29,6 +29,5 @@ Se implementa una estrategia de pruebas de **Caja Negra**, ejecutando:
 ## 5. Evidencias de Ejecución
 Las capturas de pantalla de los resultados de estas pruebas se encuentran documentadas en la ruta: `../evidencias/pruebas/`
 
-* **Figura 1:** [Login Exitoso Admin](../evidencias/pruebas/cp01_login.png)
-* **Figura 2:** [Registro RSVP Exitoso](../evidencias/pruebas/cp03_rsvp.png)
-* **Figura 3:** [Error por Aforo Completo](../evidencias/pruebas/cp05_aforo.png)
+* **Figura 1:** [Login / RSVP Exitoso](../evidencia/cp03_rsvp_exitoso.jpeg)
+* **Figura 2:** [Error de Validación](../evidencia/cp04_error_validacion.jpeg)
