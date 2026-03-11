@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PartyPlanner - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        body { background-color: #f8f9fa; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .navbar-brand { font-family: 'Brush Script MT', cursive; font-size: 2rem; color: #d4af37 !important; }
+        .hero-section {
+            background-image: url('https://source.unsplash.com/1600x900/?party,celebration');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            position: relative;
+        }
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Efecto de desenfoque/oscuridad */
+        }
+        .success-card {
+            position: relative;
+            border-radius: 15px;
+            border: 2px solid #d4af37;
+            z-index: 10;
+        }
+        .check-icon { font-size: 4rem; color: #28a745; }
+        .btn-custom { background-color: #00796b; color: white; border-radius: 25px; padding: 10px 30px; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand" href="#">Party Planner</a>
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav gap-3 font-weight-bold">
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Venues</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Packages</a></li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <img src="https://ui-avatars.com/api/?name=Ana+Lopez&background=random&rounded=true" alt="Perfil" width="40">
+                <span class="fw-bold">Ana López</span>
+                <i class="bi bi-box-arrow-right fs-4 text-secondary cursor-pointer"></i>
+                <i class="bi bi-bell-fill fs-4 text-success"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section d-flex justify-content-center align-items-center">
+        <div class="card p-5 text-center shadow-lg success-card bg-white" style="max-width: 600px;">
+            <div class="mb-3">
+                <i class="bi bi-check-circle-fill check-icon"></i>
+            </div>
+            <h2 class="fw-bold text-success mb-3">Login Exitoso!</h2>
+            <p class="text-muted mb-4">
+                ¡Bienvenida de nuevo, Ana López! Te has logueado correctamente en tu cuenta de Party Planner. Estamos listos para planificar tu próximo evento inolvidable.
+            </p>
+            <button class="btn btn-custom fw-bold border-0">Continuar a Mi Panel</button>
+        </div>
+    </section>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="fw-bold">¡Hola Ana!</h3>
+                <p class="fs-5">Tu próximo evento:<br><strong>Cumpleaños de Sofía (12 Oct, 2024)</strong></p>
+            </div>
+            <div class="col-md-6">
+                <h4 class="fw-bold mb-3">Tus Eventos Guardados</h4>
+                <p class="text-muted">Cargando eventos desde la base de datos...</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
